@@ -1,0 +1,56 @@
+.skillsbg{
+    margin-top: 12%;
+    background-color: white;
+    width: 100%;
+    height:700px;
+}
+
+.skillcard{
+    margin-top: 2%;
+    margin-left: 2.3%;
+    width: 93%;
+    height: 555px;
+    background-color: rgb(3, 34, 49);
+    background: rgb(3, 34, 49);
+    //border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    
+&:hover{
+    box-shadow: 28px 28px 28px rgba(0.22,0.22,0.22,0.22), 20px 20px 20px rgba(0.22,0.22,0.22,0.22);
+    transition: all 0.3s cubic-bezier(1,1,1,1);
+
+}
+}
+
+.skillTitle{
+    padding-top: 2%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    font-family: Verdana;
+    font-size: 20px;
+    color: white;
+}
+
+.skillsTable{
+    margin-left: 15%;
+    margin-top: 3%;
+}
+
+.mat-button{
+    cursor: pointer;
+    border-radius: 20px;
+    border-color: white;
+    border: 2px solid rgba(255, 255, 255, 0.486);
+&:hover{
+    color: rgba(255, 255, 255, 0.486);
+    cursor: pointer;
+}
+}
+th, td {
+    padding: 15px;
+    border: none;
+  }
+
+  th {
+    text-align: left;
+  }

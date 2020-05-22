@@ -1,0 +1,182 @@
+.mainpage{
+    background: url("../../assets/Pic10.jpg") center center/cover;
+    height: 710px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    width:100vw;
+}
+
+.mainpage h1 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 29vh;
+    color: rgba(245, 237, 237, 0.918);
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    letter-spacing: .7em;
+    font-size: 25pt;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+//rgba(255, 255, 255, 0.26); rgba(255, 255, 255, 0.445);
+.mainpage h3 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color:white;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    top: 40vh;
+    letter-spacing: .4em;
+    font-size:1.5vw;
+    font-weight: 1200;
+    opacity: .2;
+    text-transform: lowercase;
+  }
+
+  @keyframes fade_text {
+    0%  { opacity:1;}
+    10%  { opacity:.8; }
+    25%  { opacity: .5; }
+    50%  { opacity:.3; }
+    65%  { opacity:.5; }
+    90%  { opacity: .8; }
+    100% { opacity:1; }
+  }
+  @-o-keyframes fade_text{
+      0%  { opacity:1;}
+    10%  { opacity:.8; }
+    25%  { opacity: .5; }
+    50%  { opacity:.3; }
+    65%  { opacity:.5; }
+    90%  { opacity: .8; }
+    100% { opacity:1; }
+  }
+  @-moz-keyframes fade_text{
+     0%  { opacity:1;}
+    10%  { opacity:.8; }
+    25%  { opacity: .5; }
+    50%  { opacity:.3; }
+    65%  { opacity:.5; }
+    90%  { opacity: .8; }
+    100% { opacity:1; }
+  }
+  @-webkit-keyframes fade_text{
+     0%  { opacity:1;}
+    10%  { opacity:.8; }
+    25%  { opacity: .5; }
+    50%  { opacity:.3; }
+    65%  { opacity:.5; }
+    90%  { opacity: .8; }
+    100% { opacity:1; }
+  }
+  
+
+  .text_fade{
+    -webkit-animation: fade_text 8s infinite ease-in;
+    -moz-animation: fade_text 8s infinite ease-in;
+    -o-animation: fade_text 8s infinite ease-in;
+     animation: fade_text 8s infinite ease-in;
+ }
+
+ .mainpage .homebutton{
+     justify-content: center;
+    position: relative;
+    display: inline-block;
+    margin-top: 27rem;
+    padding: 1rem 4rem 1rem 2rem;
+    color: rgba(175, 168, 168, 0.918);
+    text-align: center;
+    background-color: inherit;
+    //top: 55%;
+    left: 40%;
+    font-size: 17pt;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    line-height: 2rem;
+    //border: 2px solid rgba(255, 255, 255, 0.486);
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    //text-decoration: none;
+    &:hover {
+      color: white;
+      border-color: rgba(255, 255, 255, 0.486);
+      background-color: lighten(rgba(255, 255, 255, 0.123), 10%);
+      text-decoration: none;
+    }
+    i {
+      position: absolute;
+      right: 1.60rem;
+      top: 1.45rem;
+      text-decoration: none;
+    }
+ }
+
+ .navbar {
+    background-color: red;
+    font-family: 'Roboto', sans-serif;
+    a {
+        text-decoration: none;
+        color: black;
+        border-radius: 2.5em;
+        padding: 1em;
+        margin: 0.5em;
+        cursor: pointer;
+        
+
+        &:hover {
+            background-color: red;
+            color: white;
+        }
+    }
+    .active {
+        background-color: red;
+        color: red;
+    }
+}
+
+.links {
+  margin-top: 3%;
+  //color:white ;
+  .fa-linkedin:hover {
+      transform: scale(1.1);
+      color: rgb(51, 118, 176);
+      transition: 0.4s all;
+  }
+  .fa-instagram:hover {
+      transform: scale(1.1);
+      color:#ac1453;
+      transition: 0.4s all;
+  }
+  .fa-github:hover {
+      transform: scale(1.1);
+      transition: 0.4s all;
+      color: rgb(78, 75, 75);
+  }
+  .fa-facebook-square:hover {
+      transform: scale(1.1);
+      color:#3b5998;
+      transition: 0.4s all;
+  }
+  .fa-map-marker:hover {
+      transform: scale(1.1);
+      color:#158b05;
+      transition: 0.4s all;
+  }
+  .fa-twitter:hover{
+      transform: scale(1.1);
+      color: #38A1F3;
+      transition: 0.4s all;
+  }
+}
+
+.links a{
+  margin-left: 11.5%;
+  color: #1b242f;
+}
+.links a:visited {
+  color: #1b242f;
+}
+
+  
+ 

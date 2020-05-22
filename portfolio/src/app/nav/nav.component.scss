@@ -1,0 +1,45 @@
+.navbar {
+    overflow: hidden;
+    background-color: rgb(3, 34, 49);
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0%; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    left: 0%;
+    z-index:999;
+    height: 64px;
+    margin: 0px;
+    margin-top: 0em;
+  }
+
+  .home{
+      margin-left: 1%;
+      margin-right: 18%;
+     
+  }
+  
+  .nav{
+      padding-right: 50px;
+  }
+  /* Links inside the navbar */
+  .navbar a {
+    
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    font-size: 13.5px;
+    
+    font-family: Verdana;
+    letter-spacing: 0.2em;
+    text-align: center;
+    padding: 22px 22px;
+    text-decoration: none;
+    &:hover{
+        background-color: rgb(5, 131, 104);
+    }
+  }
+
+  body{
+      margin: 0px;
+  }
+

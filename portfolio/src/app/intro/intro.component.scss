@@ -1,0 +1,107 @@
+.aboutCard{
+    top: 115px;
+    margin-left: 2.5%;
+    width: 95%;
+    height: 555px;
+    background-color: white;
+    background: #fff;
+    //border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);}
+
+.aboutCard:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 20px 20px rgba(0,0,0,0.22);
+  }
+
+  .contentdiv{
+      margin-left: 3%;
+      margin-top: 2%;
+  }
+
+  .contentdiv p{
+      justify-self: center;
+      text-justify: center;
+        font-size: large;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+  }
+  .matcardcontent{
+      color: black;
+      justify-content: center;
+      text-align: justify;
+      line-height: 2rem;
+      letter-spacing: 0.02rem;
+  }
+  mat-card-content{
+      justify-content: center;
+  }
+  .cardTitle{
+      color: black;
+      font-size: 20px;
+      justify-content: center;
+      font-family: Verdana;
+      text-align: center;
+      margin-bottom: 5%;
+      letter-spacing: 0.05em;
+  }
+
+  .mat-button{
+      background-color: rgb(3, 34, 49);
+      color: #f2f2f2;
+      font-family: Verdana;
+      cursor: pointer !important;
+  &:hover{
+    background-color: rgb(5, 131, 104);
+}
+  }
+
+  .buttonDiv{
+      margin-top: 3%;
+      margin-left: 33%;
+  }
+
+  .links {
+    color:#1b242f ;
+    .fa-linkedin:hover {
+        transform: scale(1.1);
+        color: rgb(51, 118, 176);
+        transition: 0.4s all;
+    }
+    .fa-instagram:hover {
+        transform: scale(1.1);
+        color:#ac1453;
+        transition: 0.4s all;
+    }
+    .fa-github:hover {
+        transform: scale(1.1);
+        transition: 0.4s all;
+        color: rgb(78, 75, 75);
+    }
+    .fa-facebook-square:hover {
+        transform: scale(1.1);
+        color:#3b5998;
+        transition: 0.4s all;
+    }
+    .fa-map-marker:hover {
+        transform: scale(1.1);
+        color:#158b05;
+        transition: 0.4s all;
+    }
+    .fa-twitter:hover{
+        transform: scale(1.1);
+        color: #38A1F3;
+        transition: 0.4s all;
+    }
+}
+
+a{
+    margin-left: 10%;
+    color: #1b242f;
+}
+  a:visited {
+    color: #1b242f;
+  }
+  
+
