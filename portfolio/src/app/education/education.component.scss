@@ -11,36 +11,30 @@ body {
 }
 
 .container {
+  margin-left:0;
   width: 60%;
-  margin: 20px auto;
+  margin-top: 80px;
 }
 
 .fb-card-container {
-  width: 400px;
-  height: 400px;
+  width: 700px;
+  height: 500px;
   margin: 0 auto;
 }
 
 .card {
-  width: 400px;
+  width: 600px;
   height: 400px;
-  padding: 30px;
   border-radius: 2px;
   box-shadow: 3px 3px 10px rgba(0,0,0,.4);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+  //align-items: center;
+  //justify-content: space-around;
   text-align: center;
 }
 
-.card h2 {
-  font-size: 5em;
-  font-weight: 400;
-  text-align: center;
-  line-height: 1.5;
-  letter-spacing: 5px;
-}
+
 
 .front {
   background-color: #faf7eb;
@@ -49,7 +43,7 @@ body {
 }
 
 .back {
-  background-color: #113366;
+  background-color: rgb(3, 34, 49);
   color: #eee;
   position: absolute;
   z-index: -1;
@@ -59,7 +53,7 @@ body {
 }
 
 .front:hover ~ .back {
-  transform: translate(420px, 0px);
+  transform: translate(670px, 0px);
 }
 
 @keyframes slide-out {
@@ -67,6 +61,102 @@ body {
     transform: translate(15px, 15px);
   }
   to {
-    transform: translate(420px, 0px);
+    transform: translate(670px, 0px);
   }
 }
+
+.cardTitle{
+  margin-top: 2%;
+  color: rgb(3, 34, 49);
+  font-size: 25px;
+  justify-content: center;
+  font-family: Verdana;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.university{
+  //text-align: center;
+  //margin-top: 1%;
+  font-size: 20px;
+  padding: 2%;
+  padding-top: 3%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  background-color: rgb(3, 34, 49);
+  height: 15%;
+  color: white;
+  
+}
+.universitybtech{
+  //text-align: center;
+  //margin-top: 1%;
+  font-size: 20px;
+  padding: 2%;
+  padding-top: 3%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  background-color: white;
+  height: 15%;
+  color: black;
+  
+}
+
+.course{
+  margin-top: 2%;
+  font-size: 17px;
+  margin-left: 2%;
+  text-align: left;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.cgpa{
+  margin-top: 1.5%;
+  margin-left: 2%;
+  text-align: left;
+}
+
+progress::-webkit-progress-value {
+  background: black !important;
+}
+
+
+/* heigt of progressbar and background color*/
+
+progress {
+  background-color: white;
+  height: 4px;
+  width: 59%;
+}
+
+
+
+
+.coursetable{
+  text-align: left;
+  margin-top: 1%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+tr.border{
+  outline: 0.5px solid rgba(173, 166, 166, 0.432);
+  margin-left: 3%;
+  padding: 3%;
+}
+
+
+
+// .mat-button{
+//   cursor: pointer;
+//   border-radius: 20px;
+//   border-color: rgb(3, 34, 49);
+//   border: 2px solid rgba(255, 255, 255, 0.486);
+// &:hover{
+//   color: rgba(255, 255, 255, 0.486);
+//   cursor: pointer;
+// }
+// }

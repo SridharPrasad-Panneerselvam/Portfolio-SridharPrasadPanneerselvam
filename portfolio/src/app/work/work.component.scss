@@ -1,0 +1,237 @@
+// @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700');
+
+// $primary-color: #ffce5e;
+// $secondary-color: #f8e8e8;
+// $font-stack: 'Montserrat', sans-serif;
+// $small-break: '420px';
+
+// @mixin vertical-centered {
+//   position: absolute;
+//   left: 50%;
+//   top: 50%;
+//   transform: translate(-50%, -50%);
+// }
+
+// @mixin break ($break) {
+//   @media screen and (max-width: $break) {
+//     margin: .3em 0;
+//     display: block;
+//     text-align: center;
+//   }
+// }
+
+// @mixin bgImg($url) {
+//   background: url($url) center no-repeat;
+//   background-size: cover;
+// }
+
+// @keyframes header-h1 {
+//   from {
+//     margin: 0;
+//   }
+//   to {
+//     margin: 1em 0;
+//   }
+// }
+
+// @keyframes card-slide {
+//   from {
+//     position: absolute;
+//     top: 0%;
+//     left: -100%;
+//   }
+//   to {
+//     position: relative;
+//     left: 0%;
+//   }
+// }
+
+// body {
+//   margin: 0;
+//   padding: 0;
+//   background: #222;
+//   font-family: $font-stack;
+// }
+
+// #know-me {
+//   padding: 5px 45px;
+//   h1 {
+//     display: block;
+//     border-bottom: 1px solid $primary-color;
+//     text-align: right;
+//     color: $secondary-color;
+//   }
+// }
+
+// .card-container {
+//   display: flex;
+//   justify-content: space-between;  
+//   @media screen and (max-width: $small-break) {
+//     .card {
+//       ;
+//     }
+//   }
+//   .card {    
+//     background: #fff;
+//     border-radius: 3px;
+//     box-shadow: 0 3px 7px -3px rgba(100, 100, 100, 0.3);
+//     margin: 0 auto 1.6%;
+//     overflow: hidden;
+//     position: relative;
+//     height: 350px;
+//     width: 200px;
+//     animation: card-slide 1s ease-in forwards;
+//     cursor: pointer;
+//     .details {
+//       position: absolute;
+//       top: 0%;
+//       left: -100%;
+//       margin: 0;
+//       padding: 0;
+//       transition: all .3s ease-out;
+//       height: inherit;
+//       width: 100%;
+//       background: rgba(100, 100, 100, .75);
+//       color: $primary-color;   
+//       text-shadow: 1px 1px rgba(100, 100, 100, .3);
+//       opacity: 0;
+//       > li:first-child {
+//         padding: 1em;
+//         text-transform: uppercase;
+//         font-weight: 700;
+//         text-align: center;
+//         background: $primary-color;
+//         color: #222;
+//       }
+//       li {
+//         display: block;
+//         padding: .5em;
+//         list-style: none;        
+//         &:before {
+//           font-family: FontAwesome;
+//         }
+//       }
+//       li:last-child {
+//         color: $secondary-color;
+//         font-size: 80%;
+//         &:before {
+//           content: " '' ";
+//         }
+//         &:after {
+//           content: " '' ";
+//         }
+//       }
+//       .date:before {
+//         content: "\f133";
+//         display: inline-block;
+//         margin-right: 5px;
+//       }
+//     }
+//     &:hover {
+//       .details {
+//         left: 0%;
+//         opacity: 1;
+//       }
+//     }
+//     &:nth-child(1) {
+//       @include bgImg("http://i62.tinypic.com/34oq4o0.jpg");
+//     }
+//     &:nth-child(2) {
+//       @include bgImg("http://i60.tinypic.com/xeiv79.jpg");
+//     }
+//     &:nth-child(3) {
+//       @include bgImg("http://oi40.tinypic.com/4na6b.jpg");
+//     }
+//   }
+// }
+
+.container{
+    margin: 0;
+    padding: 0;   
+    display: flex;
+  }
+  
+  .box {
+    position: relative;
+    width: 950px;
+    height: 500px;
+    background: rgb(3, 34, 49);
+    margin: 0 auto;
+    box-shadow: 0px 5px 25px rgba(0,0,0,.7);
+    overflow: hidden;
+    margin-bottom: 10%;
+  }
+  
+  .box__img {
+    position: absolute;
+    top:0;
+    left:0;
+    transition: transform .5s linear;
+    
+  }
+  
+  .box__details{
+    color: #fff;
+    padding: 10px 25px;
+  }
+  
+  .box__details h2 {
+    text-align: center;
+    color: #ccc;
+  }
+  
+  .box:hover .box__img {
+    transform: translateX(-100%);  
+  }
+  
+  .cta {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .cta:hover {
+    background: orange;
+    border-radius: 10px;
+  }
+
+  .cardTitle{
+    margin-top: 2%;
+    color: rgb(3, 34, 49);
+    font-size: 25px;
+    justify-content: center;
+    font-family: Verdana;
+    text-align: center;
+    letter-spacing: 0.05em;
+    margin-bottom: 5%;
+  }
+
+  .table1{
+      width: 100%;
+      //padding: 2%;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: large;
+  }
+
+  .list{
+    
+    list-style-type:square;
+    text-align: justify;
+    width: 90%;
+    line-height: 1.5rem;
+    letter-spacing: 0.02rem;
+      //padding: 1%;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 16px;
+      border: thin 1px  white;
+  }
+
+  .role
+  {
+      padding: 3%;
+      margin-left: 1%;
+  }

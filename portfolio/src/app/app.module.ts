@@ -15,6 +15,7 @@ import { NavComponent } from './nav/nav.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
 import { MatButtonModule } from '@angular/material/button';
+import { WorkComponent } from './work/work.component';
 
 
 
@@ -32,7 +33,8 @@ import { MatButtonModule } from '@angular/material/button';
     IntroComponent,
     NavComponent,
     ProjectsComponent,
-    SkillsComponent
+    SkillsComponent,
+    WorkComponent
   ],
   imports: [
     BrowserModule,
