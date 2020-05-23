@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+declare var timeline;
+
 @Component({
   selector: 'app-experience',
   templateUrl: './experience.component.html',
@@ -10,6 +12,7 @@ export class ExperienceComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    timeline();
   }
-
+  
 }

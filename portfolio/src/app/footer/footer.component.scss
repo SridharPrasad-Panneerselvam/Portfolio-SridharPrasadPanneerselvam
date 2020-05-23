@@ -1,0 +1,61 @@
+.footer {
+    overflow: hidden;
+    background-color: rgb(3, 34, 49);
+    //position: fixed; /* Set the navbar to fixed position */
+    bottom: 0%; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    height: 90px;
+  }
+
+  .icons {
+     margin-top: 1%; 
+     margin-bottom: 1%;
+    text-align: center;
+    .fa-linkedin {
+        transform: scale(1.1);
+        color: rgb(51, 118, 176);
+        transition: 0.4s all;
+    }
+    .fa-instagram {
+        transform: scale(1.1);
+        color:#ac1453;
+        transition: 0.4s all;
+    }
+    .fa-github {
+        transform: scale(1.1);
+        transition: 0.4s all;
+        color: rgb(78, 75, 75);
+    }
+    .fa-facebook-square {
+        transform: scale(1.1);
+        color:#3b5998;
+        transition: 0.4s all;
+    }
+    .fa-map-marker {
+        transform: scale(1.1);
+        color:#158b05;
+        transition: 0.4s all;
+    }
+    .fa-twitter{
+        transform: scale(1.1);
+        color: #38A1F3;
+        transition: 0.4s all;
+    }
+}
+
+a{
+    &:first-child{
+        margin-left: 0%;
+    }
+    margin-left: 3.8%;
+    color: #ebebeb;
+}
+  a:visited {
+    color: #e2e7ec;
+  }
+
+  .lastline{
+      color: rgba(255, 255, 255, 0.377);
+      text-align: center;
+      margin-bottom: 1%;
+  }
