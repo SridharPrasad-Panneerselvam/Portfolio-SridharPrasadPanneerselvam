@@ -1,32 +1,53 @@
-<p>contact works!</p>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Layered Card Hover</title>
-</head>
-<body>
-  <div class="box">
-      <div class="card">
-        <div class="imgBx">
-            <img src="https://images.unsplash.com/photo-1532123675048-773bd75df1b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="images">
-        </div>
-        <div class="details">
-            <h2>SomeOne Famous<br><span>Director</span></h2>
-        </div>
-      </div>
+<section id ="Contact">
+<div class="contactDiv">
+<br><br>
     
-       <div class="card">
-         <div class="imgBx">
-            <img src="https://images.unsplash.com/photo-1549417229-aa67d3263c09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="images">
-         </div>
-         <div class="details">
-            <h2>SomeOne Famous<br><span>Producer</span></h2>
+    <mat-card-title class="cardTitle">CONTACT ME</mat-card-title>
+    <mat-card class="contactCard">
+        <div class="container flex">
+            <div class="header">
+              I'd love to hear from you! 
+            </div>
+            <br> <br> <br>
+            <div class="highlight">
+                Contact - panneerselvam.s@northeastern.edu 
+            </div>
+            <form id="contact" (ngSubmit)="submit()" [formGroup]="contact">
+              <div class="form-group">
+                <input type="text" id="name" placeholder="Name" formControlName="name" required>
+               </div>
+              <div class="form-group"> 
+                <input placeholder="Enter email" type="email" id="email" formControlName="email" required/> </div>
+              <div class="form-group"> 
+                <textarea id="message" placeholder="Message" formControlName="message" required></textarea>  
+              </div>
+              <input type="submit" class="button" value="Submit" style="margin-left: 350px;" [disabled]="!contact.valid">
+            </form>
           </div>
-       </div>
- 
+
+    </mat-card>
+    
+</div>
+</section>
+
+<div id="success" class="modal">
+    <div class="modal-content" *ngIf="expan == true">
+        <span (click)="spanClick()" class="close">&times;</span>
+        <div class="center">
+          <h2><i>I've got your mail!</i></h2>
+          <p>Thanks for getting in touch, {{name}}! I will be in touch soon.</p>
+        </div>
+    </div>
   </div>
-</body>
-</html>
+  
+  <div id="retry" class="modal">
+    <div class="modal-content" *ngIf="expan == true">
+        <span (click)="span()" class="close">&times;</span>
+        <div class="center">
+          <h2> Oops! </h2>
+          <p> Would you mind sending your thoughts again? <br>
+            You can also reach out to me at <a href="sekar.h@northeastern.edu"> <i class="fas fa-envelope"></i></a>
+          </p>
+        </div>
+    </div>
+  </div>

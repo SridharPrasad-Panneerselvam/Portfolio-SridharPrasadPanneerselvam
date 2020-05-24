@@ -16,6 +16,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
 import { MatButtonModule } from '@angular/material/button';
 import { WorkComponent } from './work/work.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -41,7 +43,9 @@ import { WorkComponent } from './work/work.component';
     AppRoutingModule,
     FlexLayoutModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   exports:[],
   providers: [],
