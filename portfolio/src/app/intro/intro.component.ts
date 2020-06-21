@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./intro.component.scss']
 })
 export class IntroComponent implements OnInit {
-
+  url = "./assets/SridharPrasadPanneerselvam_Resume.pdf";
+  filename = "SridharPrasadPanneerselvam_Resume.pdf";
   constructor() { }
 
   ngOnInit(): void {

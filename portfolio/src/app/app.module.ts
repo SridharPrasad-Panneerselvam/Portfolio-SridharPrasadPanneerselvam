@@ -18,6 +18,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { WorkComponent } from './work/work.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import {MatListModule} from '@angular/material/list';
+import {MatSelectModule} from '@angular/material/select';
+import { MaterialModule } from './material-module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -45,7 +51,13 @@ import { HttpClientModule } from '@angular/common/http';
     MatCardModule,
     MatButtonModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    MatInputModule,
+    MatListModule,
+    MatSelectModule,
+    MaterialModule,
+    BrowserAnimationsModule
   ],
   exports:[],
   providers: [],

@@ -1,4 +1,4 @@
-<div class="navbar">
+<!-- <div class="navbar">
     <a href="#Home" class="home">Sridhar's Profile</a>
     <a href="profile#About" class="nav">About</a>
     <a href="profile#Skills"class="nav">Skills</a>
@@ -8,5 +8,25 @@
     <a href="profile#Projects" class="nav">Projects</a>
     <a href="profile#Contact" class="nav">Contact</a>
     <a href="https://drive.google.com/open?id=17OfUJtUQcLZTh48ho1bvOmm01bll4rFb" target="_blank" rel="noopener noreferrer" class="nav">Resume</a>    
-</div>
+</div> -->
+
+<nav class="navbar navbar-expand-lg navbar-light sticky-top shadow">
+    <button id="navbar-toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#stickyNav"
+        aria-controls="stickyNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="stickyNav">
+        <div class="navbar-nav ">
+            <a class="home nav-item nav-link" (click)="Home()">Sridhar's Profile</a>
+            <a class="nav nav-item nav-link" (click)="goTo('About')">About</a>
+            <a class="nav nav-item nav-link" (click)="goTo('Skills')">Skills</a>
+            <a class="nav nav-item nav-link" (click)="goTo('Experience')">Timeline</a>
+            <a class="nav nav-item nav-link" (click)="goTo('Education')">Education</a>
+            <a class="nav nav-item nav-link" (click)="goTo('Work')">Experience</a>
+            <a class="nav nav-item nav-link" (click)="goTo('Projects')">Projects</a>
+            <a class="nav nav-item nav-link" (click)="goTo('Contact')">Contact</a>
+            <a class="nav nav-item nav-link" href="./assets/SridharPrasadPanneerselvam_Resume.pdf" target="_blank">RESUME</a>
+        </div>
+    </div>
+</nav>
 

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, Validators, FormControl, ReactiveFormsModule } from '@angular/forms';
+import { FormGroup, Validators, FormControl, ReactiveFormsModule ,FormsModule} from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 
 declare var $;
@@ -27,6 +27,7 @@ export class ContactComponent implements OnInit {
   }
 
   submit() {
+    if(this.contact.valid){
     this._http.post('https://formspree.io/xnqgpqzk', this.contact.value)
       .subscribe(res => {
         if (res['ok']) {
@@ -58,6 +59,32 @@ export class ContactComponent implements OnInit {
 
          }
       })
+  }
+}
+
+get rf() { return this.contact.controls; }
+
+getRegisterErrorMessage(x: any) {
+  switch(x) {
+    case "name":
+      if (this.contact.get('name').hasError('required')) {
+        return 'Please provide an input';
+      }
+      break;
+    case "email":
+      if (this.contact.get('email').hasError('required')) {
+        return 'Please provide an input';
+      } else if (this.contact.get('email').hasError('email')){
+        return this.contact.get('email').hasError('email') ? 'Not a valid email' : '';
+      }
+      break;
+    case "message":
+      if (this.contact.get('message').hasError('required')) {
+        return;
+      }
+      break;
+    }
+    
   }
 
   spanClick(){

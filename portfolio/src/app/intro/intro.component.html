@@ -9,15 +9,15 @@
             <mat-card-title class="cardTitle">ABOUT ME</mat-card-title>
             <mat-card-content class="matcardcontent">
                 <p>
-                    Hi! I am <strong>Sridhar Prasad Panneerselvam</strong>, currently pursuing my master's in Information Systems at Northeastern University, Boston 
+                    Hi! I am <strong>Sridhar Prasad Panneerselvam</strong>, currently pursuing my Master's in Information Systems at Northeastern University, Boston 
             and an experienced Software Engineer with a history of working in the Information Technology and Services industry for 2.6 years; have developed software using multiple frameworks; 
-            knowledge of software development, cloud services, networking, database management and design, incident and problem management; Interested in furthering my experience by developing customer focused applications.
+            knowledge of software development, cloud computing, networking, database management and design, incident and problem management; Interested in furthering my experience by developing customer focused applications.
                 </p>
             </mat-card-content>
             <div class="buttonDiv">
             <mat-card-actions class="buttonActions">
-                <button mat-button>Download CV <i class="fas fa-file-download"></i></button>
-                <button mat-button><a href="profile#Contact">Contact Me <i class="fas fa-address-book"></i></a></button>
+                <a [href]="url" [download]="filename" style="text-decoration: none;"><button mat-button class="buttonDownload">Download CV <i class="fas fa-file-download"></i></button></a>
+                <a href="profile#Contact" class="contactA"><button mat-button class="buttonContact">Contact Me <i class="fas fa-address-book"></i></button></a>
               </mat-card-actions>
             </div>
             <br><br>

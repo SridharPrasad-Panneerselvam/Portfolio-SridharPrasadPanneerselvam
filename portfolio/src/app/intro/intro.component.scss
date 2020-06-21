@@ -47,9 +47,10 @@
       letter-spacing: 0.05em;
   }
 
-  .mat-button{
+  .buttonDownload{
+      margin-left: 10%;
       background-color: rgb(3, 34, 49);
-      color: #f2f2f2;
+      color: #f2f2f2 !important;
       font-family: Verdana;
       cursor: pointer !important;
   &:hover{
@@ -61,7 +62,7 @@
 
   .buttonDiv{
       margin-top: 3%;
-      margin-left: 33%;
+      margin-left: 20%;
   }
 
   .links {
@@ -105,5 +106,19 @@ a{
   a:visited {
     color: #1b242f;
   }
+
+  .contactA{
+      text-decoration: none;
+      color: white;
+  }
   
+  .buttonContact{
+    background-color: rgb(3, 34, 49);
+    color: #f2f2f2 !important;
+    font-family: Verdana;
+    cursor: pointer !important;
+    &:hover{
+        background-color: rgb(5, 131, 104);
+    }
+  }
 

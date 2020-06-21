@@ -5,7 +5,7 @@ body{
     justify-content:center;
     align-items: center;
     min-height: 120vh;
-    background: rgb(3, 34, 49);
+    //background: rgb(3, 34, 49);
     font-family: sans-serif;
   }
   .box{
@@ -79,40 +79,187 @@ body{
       right: 10px;
       bottom: 10px;
       height: 300px;
-      text-align: center;
+      //text-align: center;
   }
+
+  .codeButton{
+    margin-top: 2px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color:inherit;
+    margin-left: 108px;
+    color: #777 !important;
+    border-color: #777 !important;
+    padding-top: 2.5px;
+    font-size: 12px;
+    &:hover{
+      border-color: black !important;
+      cursor: pointer;
+      color: black !important;
+      
+    }
+  
+  }
+
+  .fa-github:hover {
+    transform: scale(1.1);
+    transition: 0.4s all;
+    color: rgb(5, 131, 104);
+}
+
+
+ .skillsButton{
+   //color: white;
+   background-color: rgb(3, 34, 49) ;
+   color: white ;
+   margin: 0.7px;
+   border-radius: 5px ;
+   font-size: 11px;
+   border-color: rgb(3, 34, 49);
+   &:hover{
+    //border-color: black !important;
+  
+    color: white;
+    background-color: #777;
+  }
+ }
+
+ .spreadsheetButton{
+  //color: white;
+  background-color: rgb(3, 34, 49) ;
+  color: white ;
+  margin: 6px;
+  margin-top: 40px;
+  //margin-bottom: 100px;
+  border-radius: 5px ;
+  font-size: 11px;
+  border-color: rgb(3, 34, 49);
+  &:hover{
+    //border-color: black !important;
+    color: white;
+    background-color: #777;
+  }
+}
+
+.todoButton{
+  background-color: rgb(3, 34, 49) ;
+  color: white ;
+  margin: 5px;
+
+  border-radius: 5px ;
+  font-size: 11px;
+  border-color: rgb(3, 34, 49);
+  &:hover{
+    //border-color: black !important;
+    color: white;
+    background-color: #777;
+  }
+}
+
+.medsysButton{
+  background-color: rgb(3, 34, 49) ;
+  color: white ;
+  margin: 8px;
+  margin-top: 30px;
+  //margin-bottom: 100px;
+  border-radius: 5px ;
+  font-size: 11px;
+  border-color: rgb(3, 34, 49);
+  &:hover{
+    //border-color: black !important;
+    color: white;
+    background-color: #777;
+  }
+}
+
+.dentalButton{
+  background-color: rgb(3, 34, 49) ;
+  color: white ;
+  margin: 4px;
+  margin-top: 20px;
+  //margin-bottom: 100px;
+  border-radius: 5px ;
+  font-size: 11px;
+  border-color: rgb(3, 34, 49);
+  &:hover{
+    //border-color: black !important;
+    color: white;
+    background-color: #777;
+  }
+}
+
+.pfButton{
+  background-color: rgb(3, 34, 49) ;
+  color: white ;
+  margin: 5px;
+  margin-top: 10px;
+  //margin-bottom: 100px;
+  border-radius: 5px ;
+  font-size: 11px;
+  border-color: rgb(3, 34, 49);
+  &:hover{
+    //border-color: black !important;
+    color: white;
+    background-color: #777;
+  }
+}
 
   .card .details h2{
    margin: 0;
    padding: 0;
    font-weight: 600;
    font-size: 20px;
-   color: #777;
+   color: rgb(3, 34, 49);
    text-transform: uppercase;
+   text-align: center;
+   margin-bottom: 5px;
   } 
 
   .card .details h2 span{
   font-weight: 500;
   font-size: 16px;
-  color: #f38695;
+  color: rgb(5, 131, 104);
   display: block;
-  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
    } 
 
+   .details p {
+     color: #777;
+     text-align: justify;
+     margin-bottom: 10px;
+  }
 
 
 .cardDiv{
-    background-color: rgb(3, 34, 49);
+    //background-color: rgb(3, 34, 49);
     width: 100%;
-    height: 100px;
+    //height: 50px;
 }
 
 .cardTitle{
-    padding: 5%;
-    color: white;
+    //padding: 2%;
+    color: rgb(3, 34, 49);
     font-size: 25px;
-    justify-content: center;
+    //justify-content: center;
     font-family: Verdana;
     text-align: center;
     letter-spacing: 0.05em;
+}
+
+
+
+
+.fa-github{
+  transform: scale(1.1);
+  transition: 0.4s all;
+  color: rgb(78, 75, 75);
+}
+
+
+.buttonDiv{
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  text-justify: center;
 }
